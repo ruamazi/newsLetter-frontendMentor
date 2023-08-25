@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./index.js"></script>
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/512/709/709564.png"
+      type="image/x-icon"
+    />
+    <title>Newsletter sign-up</title>
+  </head>
+  <body>
+    <div class="main-container" id="main">
+      <section class="text-section">
+        <div class="top">
+          <h1 class="main-title">Stay updated!</h1>
+          <h5 class="under-title">
+            Join 60,000+ product managers receiving monthly updates on:
+          </h5>
+        </div>
+        <div class="middle">
+          <p>
+            <img src="./images/icon-list.svg" /> Product discovery and building
+            what matters
+          </p>
+          <p>
+            <img src="./images/icon-list.svg" /> Measuring to ensure updates are
+            a success
+          </p>
+          <p><img src="./images/icon-list.svg" /> And much more!</p>
+        </div>
+        <div class="bottom">
+          <form>
+            <label class="bottom-label" for="email">Email address</label>
+            <p class="error" id="error-message">Valid email required</p>
+            <input
+              class="error-input"
+              type="email"
+              id="email"
+              placeholder="email@company.com"
+              required
+            />
+            <button class="btn" id="sub-btn" type="button">
+              Subscribe to monthly newsletter
+            </button>
+          </form>
+        </div>
+      </section>
+      <div class="img-section">
+        <img
+          class="desk-img"
+          src="./images/illustration-sign-up-desktop.svg"
+          alt=""
+        />
+        <img
+          class="mob-img"
+          src="./images/illustration-sign-up-mobile.svg"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <div class="second-page hidden" id="second">
+      <img src="./images/icon-success.svg" />
+      <h1 class="main-title">Thanks for subscribing!</h1>
+      <p>
+        A confirmation email has been sent to
+        <span id="span-text"></span> . Please open it and click the button
+        inside to confirm your subscription.
+      </p>
+      <button class="btn" id="back-btn">Dismiss message</button>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/ruamazi">ruamazi</a>.
+    </div>
+  </body>
+</html>
